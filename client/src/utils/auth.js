@@ -33,6 +33,7 @@ class AuthService {
   }
 
   login(idToken) {
+    console.log("WLR -- login was run");
     // Saves user token to localStorage
     localStorage.setItem('id_token', idToken);
     window.location.assign('/');
